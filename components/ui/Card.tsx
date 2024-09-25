@@ -14,7 +14,7 @@ const card = () => {
       >
         <div className="text relative z-50">
           <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">
-            Cobmbo
+            Combo
           </h1>
           <p className="font-normal text-base text-gray-50 relative my-4">
            

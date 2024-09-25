@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "HamsterCombo",
-  description: "Get today Combo",
+  title: "DailyCombos",
+  description: "Today daily combo today riddle solution",
 };
 
 export default function RootLayout({
