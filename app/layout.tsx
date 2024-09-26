@@ -10,16 +10,19 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
+
 export const metadata: Metadata = {
   title: "DailyCombos",
   description: "Today daily combo today riddle solution",
 };
+
 
 export default function RootLayout({
   children,
@@ -28,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <link className="rounded-md" rel="icon" href="/logo.jpeg" /> {/* Path to your new favicon */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

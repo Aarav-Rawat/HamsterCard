@@ -2,8 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='h-14 w-full flex items-center'>
-        <h2 className='text-start font-semibold text-xl ml-2 text-[#AC4B2E]'>Hamster Combos</h2>
+    <nav className='h-14 w-full flex items-center justify-center'>
+       <h2 className='text-[#DB9316] text-4xl font-semibold text-center'>Daily Combos</h2>
+       
     </nav>
   )
 }
