@@ -32,9 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <div className="rounded-md">
-          <link rel="icon" href="/logo.jpeg" />
-        </div>
+
+        <link rel="icon" href="/gemz1.png" className="rounded-md" />
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
