@@ -31,8 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <head>
-        <link className="rounded-md" rel="icon" href="/logo.jpeg" /> {/* Path to your new favicon */}
+      <head>
+        <div className="rounded-md">
+          <link rel="icon" href="/logo.jpeg" />
+        </div>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

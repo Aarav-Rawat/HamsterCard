@@ -13,6 +13,7 @@ const Hero = () => {
       <div className='flex items-center justify-center mb-10 w-full'>
 
         <ExpandableCardDemo />
+        
     
       </div>
     </>
