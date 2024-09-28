@@ -3,11 +3,11 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
-import { cards } from "@/data";
+import { coins } from "@/data";
 import Card from "./Card"
 
 export function ExpandableCardDemo() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+  const [active, setActive] = useState<(typeof coins)[number] | boolean | null>(
     null
   );
   const ref = useRef<HTMLDivElement>(null);
@@ -67,11 +67,13 @@ export function ExpandableCardDemo() {
             >
               <CloseIcon />
             </motion.button>
+
             {/* opended card */}
+
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[600px] min-h-[97vh] h-full md:h-fit   flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[600px] min-h-[97vh] h-full md:h-fit  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
 
               <div className="flex justify-center items-center p-4">
@@ -94,14 +96,15 @@ export function ExpandableCardDemo() {
               </div>
 
               <motion.div className="flex gap-2" layoutId={`image-${active.title}-${id}`}>
-
-                <Card />
-                <Card />
-                <Card />
+            
+            {
+              active.cards.map((card,index)=>(
+                <Card img={card.img} key={index}/>
+              ))
+            }
+               
 
               </motion.div>
-
-
 
               <div className="pt-4 relative px-4">
                 <motion.div
@@ -123,43 +126,43 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-2xl mx-auto w-full gap-4">
-        {cards.map((card, index) => (
+        {coins.map((coin, index) => (
           <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={`card-${card.title}-${id}`}
-            onClick={() => setActive(card)}
+            layoutId={`coin-${coin.title}-${id}`}
+            key={index}
+            onClick={() => setActive(coin)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col md:flex-row ">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
+              <motion.div layoutId={`image-${coin.title}-${id}`}>
                 <Image
                   width={100}
                   height={100}
-                  src={card.src}
-                  alt={card.title}
+                  src={coin.src}
+                  alt={coin.title}
                   className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="">
                 <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
+                  layoutId={`title-${coin.title}-${id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
                 >
-                  {card.title}
+                  {coin.title}
                 </motion.h3>
                 <motion.p
-                  layoutId={`description-${card.description}-${id}`}
+                  layoutId={`description-${coin.description}-${id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
                 >
-                  {card.description}
+                  {coin.description}
                 </motion.p>
               </div>
             </div>
             <motion.button
-              layoutId={`button-${card.title}-${id}`}
+              layoutId={`button-${coin.title}-${id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
             >
-              {card.ctaText}
+              {coin.ctaText}
             </motion.button>
           </motion.div>
         ))}
