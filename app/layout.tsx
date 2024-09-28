@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
-        <link rel="icon" href="/gemz1.png" className="rounded-md" />
+        <link rel="icon" href="/logo.png" className="rounded-md" />
 
       </head>
       <body

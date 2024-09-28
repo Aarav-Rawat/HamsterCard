@@ -27,9 +27,35 @@ export const coins = [
 
   },
 
+  // {
+  //   title: "Hamster Combat",
+  //   description: "Daily Combos",
+  //   src: "",
+  //   ctaText: "Reveal",
+  //   cards: [
+  //     {
+  //       img: "/gemz1.png",
+  //     },
+  //     {
+  //       img: "/gemz1.png",
+  //     },
+  //     {
+  //       img: "/gemz1.png",
+  //     },
+  //   ],
+  //   content: () => {
+  //     return (
+  //       <p>
+  //             yo
+  //       </p>
+  //     );
+  //   },
+
+  // },
+
   {
     title: "Musk Empire",
-    description: "Daily Combo & Riddle Solution",
+    description: "Daily Combo , Riddle Solution & Rebus Solution",
     src: "/MuskEmpire.jpeg",
     ctaText: "Reveal",
     cards: [
@@ -50,6 +76,8 @@ export const coins = [
         </p>
       );
     },
+    riddle: "hash",
+    rebus: "capital"
 
   },
 

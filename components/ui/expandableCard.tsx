@@ -159,7 +159,7 @@ export function ExpandableCardDemo() {
             </div>
             <motion.button
               layoutId={`button-${coin.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-0"
+              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-[#f68700] hover:text-white text-black mt-0"
             >
               {coin.ctaText}
             </motion.button>

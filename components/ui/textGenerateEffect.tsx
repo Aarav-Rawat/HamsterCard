@@ -38,16 +38,18 @@ export const TextGenerateEffect = ({
                     return (
                         <motion.span
                             key={word + idx}
-                            className="opacity-0 "
+                            className={` ${idx === 2 ? `text-[#C36E22]` : `text-white`} opacity-0`}
                             style={{
                                 filter: filter ? "blur(10px)" : "none",
-                            }}
+                            }
+                            }
                         >
                             {word}{" "}
                         </motion.span>
                     );
-                })}
-            </motion.div>
+                })
+                }
+            </motion.div >
         );
     };
 
