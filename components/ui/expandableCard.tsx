@@ -46,7 +46,7 @@ export function ExpandableCardDemo() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -76,33 +76,32 @@ export function ExpandableCardDemo() {
               className="w-full max-w-[600px] min-h-[97vh] h-full md:h-fit  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
 
-              <div className="flex justify-center items-center p-4">
-                <div className="">
-                  <motion.h3
-                    layoutId={`title-${active.title}-${id}`}
-                    className="font-bold text-neutral-700 dark:text-neutral-200 text-2xl"
-                  >
-                    {active.title}
-                  </motion.h3>
-                  <motion.p
-                    layoutId={`description-${active.description}-${id}`}
-                    className="text-neutral-600 dark:text-neutral-400 text-center"
-                  >
-                    {active.description}
-                  </motion.p>
-                </div>
+              <div className="flex justify-center items-center p-2 text-center">
+
+                <motion.h3
+                  layoutId={`title-${active.title}-${id}`}
+                  className="font-bold text-neutral-700 dark:text-neutral-200 text-4xl"
+                >
+                  {active.title}
+                </motion.h3>
+
 
 
               </div>
 
-              <motion.div className="flex gap-2" layoutId={`image-${active.title}-${id}`}>
-            
-            {
-              active.cards.map((card,index)=>(
-                <Card img={card.img} key={index}/>
-              ))
-            }
-               
+              <motion.div className="flex flex-col items-center justify-between" layoutId={`image-${active.title}-${id}`}>
+                <h4 className="text-2xl font-semibold">Combos</h4>
+                <div className="flex justify-between items-center gap-5">
+
+                  {
+                    active.cards.map((card, index) => (
+                      <Card img={card.img} key={index} />
+                    ))
+                  }
+                </div>
+
+
+
 
               </motion.div>
 
@@ -131,28 +130,28 @@ export function ExpandableCardDemo() {
             layoutId={`coin-${coin.title}-${id}`}
             key={index}
             onClick={() => setActive(coin)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-row ">
               <motion.div layoutId={`image-${coin.title}-${id}`}>
                 <Image
                   width={100}
                   height={100}
                   src={coin.src}
                   alt={coin.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                  className="h-14 w-14  rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${coin.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="font-medium text-neutral-800 dark:text-neutral-200 text-left"
                 >
                   {coin.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${coin.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                  className="text-neutral-600 dark:text-neutral-400 text-left"
                 >
                   {coin.description}
                 </motion.p>
@@ -160,7 +159,7 @@ export function ExpandableCardDemo() {
             </div>
             <motion.button
               layoutId={`button-${coin.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
+              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-0"
             >
               {coin.ctaText}
             </motion.button>

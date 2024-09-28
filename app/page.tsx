@@ -9,19 +9,13 @@ const fredoka = Fredoka({
   variable: '--fredoka-font', 
 });
 
-const oswald = Oswald({
-  subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
-  variable: '--oswald-font',
-  style: 'normal',
-});
 
 
 
 export default function Home() {
   return (
-    <main className={oswald.className}>
-      {/* <Navbar/> */}
+    <main className={fredoka.className}>
+      <Navbar/>
       <Hero/>
     </main>
   );

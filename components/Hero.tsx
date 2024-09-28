@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { ExpandableCardDemo } from './ui/expandableCard'
+import { TextGenerateEffect } from './ui/textGenerateEffect'
 
 const Hero = () => {
   return (
@@ -8,7 +9,8 @@ const Hero = () => {
       <div className='w-full flex items-center flex-col justify-center'>
         <p></p>
      
-        <span className='text-center pb-4 pt-2 text-2xl font-semibold text-[#C36E22]'>Tap on Reveal <br /> to get today's <br /> Combos & Riddle solution</span>
+     <TextGenerateEffect className='text-center pb-4 pt-2 text-2xl font-semibold text-[#C36E22]'  words= {`Tap on Reveal to get Combos & Riddle solution`}/>
+      
       </div>
       <div className='flex items-center justify-center mb-10 w-full'>
 
