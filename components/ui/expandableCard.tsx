@@ -135,11 +135,11 @@ export function ExpandableCardDemo() {
             <div className="flex gap-4 flex-row ">
               <motion.div layoutId={`image-${coin.title}-${id}`}>
                 <Image
+                  src={coin.src}
                   width={100}
                   height={100}
-                  src={coin.src}
                   alt={coin.title}
-                  className="h-14 w-14  rounded-lg object-cover object-top"
+                  className="h-14 w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="">
