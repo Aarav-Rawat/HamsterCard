@@ -13,7 +13,7 @@ const card = (
       <div
         className={cn(
           "group w-24 h-24 cursor-pointer overflow-hidden relative card  rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 ",
-          " bg-cover bg-right bg-no-repeat md:w-40 md:h-40",
+          " bg-cover bg-right bg-no-repeat md:w-32 md:h-32",
 
         )}
         style={{ backgroundImage: `url(${img})` }}

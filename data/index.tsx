@@ -6,6 +6,7 @@ export const coins = [
     description: "Daily Combo & Cipher Code",
     src: "/gemzLogo.jpeg",
     ctaText: "Reveal",
+    cardTitle: "Daily Combos",
     cards: [
       {
         img: "/gemz1.png",
@@ -19,9 +20,11 @@ export const coins = [
     ],
     content: () => {
       return (
-        <p>
+        <div>
+          <h4 className="text-2xl font-semibold ">Daily Cipher</h4>
+          <span className="text-2xl font-extrabold">•—• • ••• • •—• •••— •</span>
 
-        </p>
+        </div>
       );
     },
 
@@ -32,6 +35,7 @@ export const coins = [
     description: "Daily Combo , Riddle Solution & Rebus Solution",
     src: "/MuskEmpireLogo.jpeg",
     ctaText: "Reveal",
+    cardTitle: "Daily Combos",
     cards: [
       {
         img: "/gemz1.png",
@@ -45,36 +49,42 @@ export const coins = [
     ],
     content: () => {
       return (
-        <p>
-
-        </p>
+        <div >
+          <div >
+            <h4 className="text-2xl font-semibold ">Daily Riddle</h4>
+            <span className="text-2xl font-extrabold">Solution - hash</span>
+          </div>
+          <div className="mt-8">
+            <h4 className="text-2xl font-semibold">Daily Rebus</h4>
+            <span className="text-2xl font-extrabold">Solution - capital</span>
+          </div>
+        </div>
       );
     },
-    riddle: "hash",
-    rebus: "capital"
 
   },
 
   {
     title: "Hamster Combat",
-    description: "Season 2 is coming soon! Stay tuned for future updates!",
+    description: "Daily-Combos",
     src: "/hamsterCombatLogo.jpeg",
     ctaText: "Reveal",
+    cardTitle: "Daily Combos",
     cards: [
-      {
-        img: "/gemz1.png",
-      },
-      {
-        img: "/gemz1.png",
-      },
-      {
-        img: "/gemz1.png",
-      },
+      // {
+      //   img: "/gemz1.png",
+      // },
+      // {
+      //   img: "/gemz1.png",
+      // },
+      // {
+      //   img: "/gemz1.png",
+      // },
     ],
     content: () => {
       return (
-        <p>
-          yo
+        <p className="text-2xl">
+          Season 2 is coming soon! Stay tuned for future updates!
         </p>
       );
     },
@@ -84,6 +94,7 @@ export const coins = [
   {
     title: "Mafia Dao",
     description: "Daily Combos, Riddle Solution",
+    cardTitle: "Daily Combos",
     src: "/mafiaDaoLogo.webp",
     ctaText: "Reveal",
     cards: [
@@ -99,9 +110,13 @@ export const coins = [
     ],
     content: () => {
       return (
-        <p>
-          yo
-        </p>
+
+        <div >
+          <h4 className="text-2xl font-semibold ">Daily Riddle</h4>
+          <span className="text-2xl font-extrabold">Solution - hash</span>
+        </div>
+
+
       );
     },
 
@@ -109,24 +124,24 @@ export const coins = [
 
   {
     title: "Rocket Rabbit",
-    description: "Season 2 is coming soon!",
+    description: "DailyCombos",
     src: "/rocketRabbitLogo.jpeg",
-    // cardTitle: "Today Bounty",
+    cardTitle: "Daily Combos",
     ctaText: "Reveal",
-    // cards: [
-    //   {
-    //     img: "/gemz1.png",
-    //   },
-    //   {
-    //     img: "/gemz1.png",
-    //   },
-    //   {
-    //     img: "/gemz1.png",
-    //   },
-    // ],
+    cards: [
+      // {
+      //   img: "/gemz1.png",
+      // },
+      // {
+      //   img: "/gemz1.png",
+      // },
+      // {
+      //   img: "/gemz1.png",
+      // },
+    ],
     content: () => {
       return (
-        <p>
+        <p className="text-2xl">
           Season 2 is coming soon!
         </p>
       );
@@ -154,13 +169,14 @@ export const coins = [
         img: "/gemz1.png",
       },
     ],
-    content: () => {
-      return (
-        <p>
-          yo
-        </p>
-      );
-    },
+   
+    // content: () => {
+    //   return (
+    //     <p>
+        
+    //     </p>
+    //   );
+    // },
 
   },
 
@@ -181,13 +197,13 @@ export const coins = [
         img: "/gemz1.png",
       },
     ],
-    content: () => {
-      return (
-        <p>
-          yo
-        </p>
-      );
-    },
+    // content: () => {
+    //   return (
+    //     <p>
+    //       yo
+    //     </p>
+    //   );
+    // },
 
   },
 
@@ -208,13 +224,13 @@ export const coins = [
         img: "/gemz1.png",
       },
     ],
-    content: () => {
-      return (
-        <p>
-          yo
-        </p>
-      );
-    },
+    // content: () => {
+    //   return (
+    //     <p>
+    //       yo
+    //     </p>
+    //   );
+    // },
 
   },
 
