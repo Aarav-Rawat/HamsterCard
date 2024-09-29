@@ -73,7 +73,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[600px] min-h-[97vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden"
+              className="w-full max-w-[620px] min-h-[97vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden"
             >
 
               <div className="flex justify-center items-center p-2 text-center">
@@ -91,11 +91,11 @@ export function ExpandableCardDemo() {
 
               <motion.div className="flex flex-col items-center justify-between" layoutId={`image-${active.title}-${id}`}>
                 <h4 className="text-2xl font-semibold dark:text-neutral-400">{active.cardTitle}</h4>
-                <div className={`flex justify-center items-center mt-2 gap-3`}>
+                 <div className={` flex justify-center items-center gap-3 mt-2`}>
 
                   {
                     active.cards.map((card, index) => (
-                      <Card img={card.img} key={index} />
+                      <Card img={card.img} key={index} className={active.className ? active.className : "md:w-40 md:h-40"}/>
                     ))
                   }
                 </div>

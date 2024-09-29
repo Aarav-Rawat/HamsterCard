@@ -9,13 +9,13 @@ export const coins = [
     cardTitle: "Daily Combos",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
     content: () => {
@@ -38,13 +38,13 @@ export const coins = [
     cardTitle: "Daily Combos",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
     content: () => {
@@ -72,13 +72,13 @@ export const coins = [
     cardTitle: "Daily Combos",
     cards: [
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
     ],
     content: () => {
@@ -99,13 +99,13 @@ export const coins = [
     ctaText: "Reveal",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
     content: () => {
@@ -130,13 +130,13 @@ export const coins = [
     ctaText: "Reveal",
     cards: [
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
       // {
-      //   img: "/gemz1.png",
+      //   img: "",
       // },
     ],
     content: () => {
@@ -157,19 +157,19 @@ export const coins = [
     ctaText: "Reveal",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
-   
+    className: "md:w-36 md:h-36"
     // content: () => {
     //   return (
     //     <p>
@@ -188,13 +188,13 @@ export const coins = [
     ctaText: "Reveal",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
     // content: () => {
@@ -215,13 +215,13 @@ export const coins = [
     ctaText: "Reveal",
     cards: [
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
       {
-        img: "/gemz1.png",
+        img: "",
       },
     ],
     // content: () => {

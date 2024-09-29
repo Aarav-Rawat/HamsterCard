@@ -3,17 +3,19 @@ import React from 'react'
 import { cn } from "@/lib/utils";
 
 const card = (
-  { img }
+  { img , className}
     : {
       img: string
+      className: string
     }
 ) => {
   return (
     <div className="max-w-xs w-full">
       <div
         className={cn(
-          "group w-24 h-24 cursor-pointer overflow-hidden relative card  rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 ",
-          " bg-cover bg-right bg-no-repeat md:w-32 md:h-32",
+          "group w-20 h-20 cursor-pointer overflow-hidden relative card  rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 ",
+          " bg-cover bg-right bg-no-repeat ",
+          `${className}`
 
         )}
         style={{ backgroundImage: `url(${img})` }}
