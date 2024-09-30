@@ -91,11 +91,11 @@ export function ExpandableCardDemo() {
 
               <motion.div className="flex flex-col items-center justify-between" layoutId={`image-${active.title}-${id}`}>
                 <h4 className="text-2xl font-semibold dark:text-neutral-400">{active.cardTitle}</h4>
-                <div className={`${active.cardsClassName ? active.cardsClassName : " gap-3"} flex justify-between items-center mt-2 `}>
+                <div className={`${active.cardsClassName ? active.cardsClassName : " gap-2"} flex justify-between items-center mt-2 `}>
 
                   {
                     active.cards.map((card, index) => (
-                      <Card img={card.img} key={index} className={active.cardClassName || "w-28 h-28 sm:w-36 sm:h-36"} />
+                      <Card img={card.img} key={index} className={active.cardClassName || "w-20 h-20 sm:w-32 sm:h-32"} />
                     ))
                   }
                 </div>
