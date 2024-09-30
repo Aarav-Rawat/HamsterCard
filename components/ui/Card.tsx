@@ -13,7 +13,7 @@ const card = (
     <div className="max-w-xs w-full">
       <div
         className={cn(
-          "group w-28 h-28 cursor-pointer overflow-hidden relative card  rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 ",
+          "group  cursor-pointer overflow-hidden relative card  rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 ",
           " bg-cover bg-right bg-no-repeat  ",
           `${className}`
 

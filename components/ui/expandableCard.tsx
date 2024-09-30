@@ -95,7 +95,7 @@ export function ExpandableCardDemo() {
 
                   {
                     active.cards.map((card, index) => (
-                      <Card img={card.img} key={index} className={`${active.cardClassName} ? ${active.cardClassName}  : "w-28 h-28" md:w-40 md:h-40 `} />
+                      <Card img={card.img} key={index} className={`${active.cardClassName} ? ${active.cardClassName}  : "w-32 h-32 md:w-40 md:h-40" `} />
                     ))
                   }
                 </div>
