@@ -73,7 +73,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[620px]  min-h-[90vh] md:min-h-[97vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden"
+              className="max-w-[420px]  min-w-[350px]  sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[97vh] min-h-[90vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl relative"
             >
 
               <div className="flex justify-center items-center p-2 text-center">
@@ -91,11 +91,11 @@ export function ExpandableCardDemo() {
 
               <motion.div className="flex flex-col items-center justify-between" layoutId={`image-${active.title}-${id}`}>
                 <h4 className="text-2xl font-semibold dark:text-neutral-400">{active.cardTitle}</h4>
-                <div className={`${active.cardsClassName ? active.cardsClassName : "flex justify-center  items-center  gap-2"}  h-full w-full mt-2 `}>
+                <div className={`${active.cardsClassName ? active.cardsClassName : " gap-3"} flex justify-between items-center mt-2 `}>
 
                   {
                     active.cards.map((card, index) => (
-                      <Card img={card.img} key={index} className={`${active.cardClassName} ? ${active.cardClassName}  : "w-32 h-32 md:w-40 md:h-40" `} />
+                      <Card img={card.img} key={index} className={active.cardClassName || "w-28 h-28 sm:w-36 sm:h-36"} />
                     ))
                   }
                 </div>

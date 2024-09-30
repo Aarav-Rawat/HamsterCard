@@ -169,7 +169,7 @@ export const coins = [
         img: "",
       },
     ],
-    cardClassName: "w-28 h-28 md:w-32 md:h-32",
+    cardClassName: "w-20 h-20 sm:w-32 sm:h-32",
     cardsClassName: ""
     // content: () => {
     //   return (
