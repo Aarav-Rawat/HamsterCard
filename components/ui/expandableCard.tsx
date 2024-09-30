@@ -73,7 +73,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[620px] min-h-[97vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden"
+              className="w-full max-w-[620px]  min-h-[90vh] md:min-h-[97vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-hidden"
             >
 
               <div className="flex justify-center items-center p-2 text-center">
