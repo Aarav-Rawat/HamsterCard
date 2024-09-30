@@ -73,14 +73,14 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="max-w-[420px]  min-w-[350px]  sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[95vh] min-h-[85vh] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl relative"
+              className="max-w-[420px]  min-w-[350px]  sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[95vh] min-h-[85vh] flex flex-col bg-neutral-900 rounded-3xl relative "
             >
 
               <div className="flex justify-center items-center p-2 text-center">
 
                 <motion.h3
                   layoutId={`title-${active.title}-${id}`}
-                  className="font-bold text-neutral-700 dark:text-neutral-200 text-4xl"
+                  className="font-bold text-neutral-200 text-4xl"
                 >
                   {active.title}
                 </motion.h3>
@@ -89,8 +89,8 @@ export function ExpandableCardDemo() {
 
               </div>
 
-              <motion.div className="flex flex-col items-center justify-between" layoutId={`image-${active.title}-${id}`}>
-                <h4 className="text-2xl font-semibold dark:text-neutral-400">{active.cardTitle}</h4>
+              <motion.div className="flex flex-col items-center justify-between " layoutId={`image-${active.title}-${id}`}>
+                <h4 className="text-2xl font-semibold text-neutral-400">{active.cardTitle}</h4>
                 <div className={`${active.cardsClassName ? active.cardsClassName : " gap-2"} flex justify-between items-center mt-2 `}>
 
                   {
@@ -111,7 +111,7 @@ export function ExpandableCardDemo() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="text-neutral-600 h-full  flex flex-col items-center  dark:text-neutral-400 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
+                  className="h-full  flex flex-col items-center text-neutral-400 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
                 >
                   {typeof active.content === "function"
                     ? active.content()
@@ -130,7 +130,7 @@ export function ExpandableCardDemo() {
             layoutId={`coin-${coin.title}-${id}`}
             key={index}
             onClick={() => setActive(coin)}
-            className="p-4 flex flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-row justify-between items-center  hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-row ">
               <motion.div layoutId={`image-${coin.title}-${id}`}>
@@ -145,13 +145,13 @@ export function ExpandableCardDemo() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${coin.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-left"
+                  className="font-medium  text-neutral-200 text-left"
                 >
                   {coin.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${coin.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-left"
+                  className="text-neutral-400 text-left"
                 >
                   {coin.description}
                 </motion.p>

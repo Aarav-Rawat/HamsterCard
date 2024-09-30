@@ -12,7 +12,7 @@ const fredoka = Fredoka({
 
 export default function Home() {
   return (
-    <main className={fredoka.className}>
+    <main className={`${fredoka.className}  `}>
       <Navbar/>
       <Hero/>
     </main>
