@@ -5,14 +5,14 @@ import { coins } from '@/data';
 
 const ScrollingImage: React.FC = () => {
     return (
-        <div className="relative overflow-hidden w-[28vw] h-16 rounded-xl flex items-center justify-center">
+        <div className="relative overflow-hidden sm:w-[28vw] w-[42vw] h-16 rounded-full flex items-center justify-center">
             <motion.div
                 className="flex gap-5"
                 initial={{ x: '100%' }}
                 animate={{ x: '-100%' }} 
                 transition={{
                     ease: 'linear',
-                    duration: 3, 
+                    duration: 5, 
                     repeat: Infinity, 
                 }}
             >
