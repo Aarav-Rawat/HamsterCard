@@ -6,7 +6,7 @@ export  const BounceLetter = ({ letter, delay }: { letter: string, delay: number
       <motion.span
         style={{ display: 'inline-block', marginRight: '2px' }}
         initial={{ y: 0 }}
-        animate={{ y: [0, -10, 0] }}
+        animate={{ y: [0, -5, 0] }}
         transition={{
           duration: 0.5,
           ease: 'easeInOut',

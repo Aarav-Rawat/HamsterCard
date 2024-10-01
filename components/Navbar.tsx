@@ -2,22 +2,25 @@
 import Image from 'next/image'
 import React from 'react'
 import { BounceLetter } from './ui/bounceWord'
+import ScrollingImage from './ui/scrollingImage'
+
 
 const Navbar = () => {
   const letters = ['D', 'a', 'i', 'l', 'y', 'C', 'o', 'm', 'b', 'o'];
   return (
-    <nav className='h-14w flex items-center justify-center md:justify-start'>
+    <nav className='h-10w flex justify-between'>
+      <div className="flex items-center justify-center h-full">
+        <Image src="/logo.png" width={60} height={60} alt="Logo" />
 
-      <Image src="/logo.png" width={80} height={80} alt="Logo" />
-
-      <h1 className='text-[#ffb83e] text-4xl  font-semibold mb-2'>
-        {letters.map((letter, index) => (
-          <BounceLetter key={index} letter={letter} delay={index * 0.1} />
-        ))}
-      </h1>
-
-     
-
+        <h1 className='text-[#ffb83e] text-xl sm:text-4xl  font-semibold'>
+          {letters.map((letter, index) => (
+            <BounceLetter key={index} letter={letter} delay={index * 0.1} />
+          ))}
+        </h1>
+      </div>
+      <div>
+        <ScrollingImage />
+      </div>
     </nav>
   )
 }

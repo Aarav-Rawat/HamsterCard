@@ -123,7 +123,7 @@ export const coins = [
   },
 
   {
-    title: "Rocket Rabbit",
+    title: "Rockey Rabbit",
     description: "DailyCombos",
     src: "/rocketRabbitLogo.jpeg",
     cardTitle: "Daily Combos",
