@@ -125,7 +125,7 @@ export const coins = [
   {
     title: "Rockey Rabbit",
     description: "DailyCombos",
-    src: "/rocketRabbitLogo.jpeg",
+    src: "/rockyRabbitLogo.png",
     cardTitle: "Daily Combos",
     ctaText: "Reveal",
     cards: [

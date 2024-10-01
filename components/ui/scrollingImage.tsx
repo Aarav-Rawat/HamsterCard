@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { coins } from '@/data';
 
 const ScrollingImage: React.FC = () => {
+    
     return (
         <div className="relative overflow-hidden sm:w-[28vw] w-[42vw] h-16 rounded-full flex items-center justify-center">
             <motion.div
@@ -12,18 +13,19 @@ const ScrollingImage: React.FC = () => {
                 animate={{ x: '-100%' }} 
                 transition={{
                     ease: 'linear',
-                    duration: 5, 
+                    duration: 7, 
                     repeat: Infinity, 
                 }}
+            
             >
                 {coins.map((coin, index) => (
-                    <motion.img
-                        key={index}
-                        src={coin.src}
-                        alt="Scrolling"
-                        className="h-10 sm:h-14 object-cover rounded-full"
-                    />
-                ))}
+            <motion.img
+                key={index}
+                src={coin.src}
+                alt="Scrolling"
+                className="h-10 sm:h-14 object-cover rounded-full"
+            />
+        ))}
             </motion.div>
         </div>
     );
