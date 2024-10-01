@@ -7,7 +7,7 @@ const ScrollingImage: React.FC = () => {
     return (
         <div className="relative overflow-hidden sm:w-[28vw] w-[42vw] h-16 rounded-full flex items-center justify-center">
             <motion.div
-                className="flex gap-5"
+                className="flex sm:gap-5 gap-2"
                 initial={{ x: '100%' }}
                 animate={{ x: '-100%' }} 
                 transition={{
