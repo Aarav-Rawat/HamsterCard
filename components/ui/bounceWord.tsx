@@ -1,7 +1,7 @@
 "use client"
 import { motion } from 'framer-motion';
 
-export  const BounceLetter = ({ letter, delay }: { letter: string, delay: number }) => {
+export  const BounceLetter = ({ letter, delay,className }: { letter: string, delay: number, key:number, className:string }) => {
     return (
       <motion.span
         style={{ display: 'inline-block', marginRight: '2px' }}
@@ -14,6 +14,7 @@ export  const BounceLetter = ({ letter, delay }: { letter: string, delay: number
           repeat: Infinity,
           delay: delay,
         }}
+        className={className}
       >
         {letter}
       </motion.span>

@@ -125,13 +125,13 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
 
-      <ul className="max-w-2xl mx-auto w-full gap-4">
+      <ul className="max-w-2xl mx-auto flex flex-col w-full gap-5">
         {coins.map((coin, index) => (
           <motion.div
             layoutId={`coin-${coin.title}-${id}`}
             key={index}
             onClick={() => setActive(coin)}
-            className="p-4 flex flex-row justify-between items-center  hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-row justify-between items-center  hover:bg-neutral-800 rounded-xl cursor-pointer border-white border-b-2 "
           >
             <div className="flex gap-4 flex-row ">
               <motion.div layoutId={`image-${coin.title}-${id}`}>

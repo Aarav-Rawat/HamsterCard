@@ -12,9 +12,10 @@ const Navbar = () => {
       <div className="flex items-center justify-center h-full">
         <Image src="/logo.png" width={60} height={60} alt="Logo" />
 
-        <h1 className='text-[#ffb83e] text-xl sm:text-4xl  font-semibold'>
+        <h1 className='text-[#ffb83e] text-[1.35rem] sm:text-4xl  font-semibold'>
           {letters.map((letter, index) => (
-            <BounceLetter key={index} letter={letter} delay={index * 0.1} />
+            <BounceLetter key={index} letter={letter} delay={index * 0.1} className={index > 4 ? "text-[#ffb83e]" : "text-white"}
+            />
           ))}
         </h1>
       </div>
