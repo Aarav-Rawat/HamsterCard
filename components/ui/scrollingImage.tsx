@@ -6,17 +6,17 @@ import { coins } from '@/data';
 const ScrollingImage: React.FC = () => {
     
     return (
-        <div className="relative overflow-hidden sm:w-[28vw] w-[42vw] h-16 rounded-full flex items-center justify-center">
+        <div className="relative overflow-hidden sm:w-full  h-16 rounded-full flex items-center justify-center">
             <motion.div
                 className="flex sm:gap-5 gap-2"
-                initial={{ x: '100%' }}
+                initial={{ x: '0' }}
                 animate={{ x: '-100%' }} 
                 transition={{
                     ease: 'linear',
-                    duration: 7, 
+                    duration: 8, 
                     repeat: Infinity, 
                 }}
-            
+              style={{ width: '200%' }}
             >
                 {coins.map((coin, index) => (
             <motion.img

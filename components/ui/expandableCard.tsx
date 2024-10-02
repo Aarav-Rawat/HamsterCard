@@ -59,7 +59,7 @@ export function ExpandableCardDemo() {
               exit={{
                 opacity: 0,
                 transition: {
-                  duration: 0.05,
+                  duration: 0,
                 },
               }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
@@ -110,7 +110,7 @@ export function ExpandableCardDemo() {
                   layout
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
+                  exit={{ opacity: 0, transition: { duration: 0.1 } }}
                   className="h-full  flex flex-col items-center text-neutral-400 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
                 >
                   {typeof active.content === "function"
@@ -124,6 +124,7 @@ export function ExpandableCardDemo() {
           </div>
         ) : null}
       </AnimatePresence>
+
       <ul className="max-w-2xl mx-auto w-full gap-4">
         {coins.map((coin, index) => (
           <motion.div
@@ -182,7 +183,7 @@ export const CloseIcon = () => {
       exit={{
         opacity: 0,
         transition: {
-          duration: 0.05,
+          duration: 0,
         },
       }}
       xmlns="http://www.w3.org/2000/svg"
