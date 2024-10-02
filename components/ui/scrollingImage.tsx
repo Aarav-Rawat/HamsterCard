@@ -6,7 +6,7 @@ import { coins } from '@/data';
 const ScrollingImage: React.FC = () => {
     
     return (
-        <div className="relative overflow-hidden sm:w-full  h-16 rounded-full flex items-center justify-center">
+        <div className="relative overflow-hidden sm:w-full h-16 w-full rounded-full flex items-center justify-center">
             <motion.div
                 className="flex sm:gap-5 gap-2"
                 initial={{ x: '0' }}

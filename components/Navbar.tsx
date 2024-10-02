@@ -18,7 +18,7 @@ const Navbar = () => {
           ))}
         </h1>
       </div>
-      <div className='w-[30vw]'>
+      <div className='sm:w-[30vw] w-[40vw]'>
         <ScrollingImage />
       </div>
     </nav>
