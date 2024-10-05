@@ -210,8 +210,8 @@ export const coins = [
 
   {
     title: "Tap Coins",
-    description: "Daily Bounty",
-    cardTitle: "Daily Bounty",
+    description: "Daily Kombos",
+    cardTitle: "",
     src: "/tapCoins.jpeg",
     ctaText: "Reveal",
     cards: [
@@ -234,5 +234,65 @@ export const coins = [
     // },
 
   },
+
+  {
+    title: "Blum",
+    description: "Daily Kombo",
+    cardTitle: "",
+    src: "/blumLogo.png",
+    ctaText: "Reveal",
+    cards: [
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+    ],
+    // content: () => {
+    //   return (
+    //     <p>
+    //       yo
+    //     </p>
+    //   );
+    // },
+
+  },
+
+  {
+    title: "Tomarket",
+    description: "Daily Bounty",
+    cardTitle: "Daily Bounty",
+    src: "/tomarketLogo.png",
+    ctaText: "Reveal",
+    cards: [
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+      {
+        img: "",
+      },
+     
+    ],
+    // content: () => {
+    //   return (
+    //     <p>
+    //       yo
+    //     </p>
+    //   );
+    // },
+
+  },
+
+  
 
 ];
