@@ -5,11 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 import { coins } from "@/data";
 import Card from "./Card"
-
 export function ExpandableCardDemo() {
-  const [active, setActive] = useState<(typeof coins)[number] | boolean | null>(
-    null
-  );
+  const [active, setActive] = useState<(typeof coins)[number] | boolean | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
@@ -40,29 +37,22 @@ export function ExpandableCardDemo() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }} 
             className="fixed inset-0 bg-black/20 h-full w-full z-10"
           />
         )}
       </AnimatePresence>
+
       <AnimatePresence>
         {active && typeof active === "object" ? (
           <div className="fixed inset-0 grid place-items-center z-[100]">
-
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 0.05,
-                },
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }} 
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
@@ -72,18 +62,19 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="max-w-[420px]  min-w-[350px]  sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[95vh] h-auto min-h-[50vh] max-h-[80vh] flex flex-col bg-neutral-900 rounded-3xl py-2 overflow-hidden"
+              className="max-w-[420px]  min-w-[350px] sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[95vh] h-auto min-h-[50vh] max-h-[80vh] flex flex-col bg-neutral-900 rounded-3xl py-2 overflow-hidden"
+              transition={{ duration: 0.2 }} 
             >
-
-              <motion.div className="flex flex-col items-center justify-between " layoutId={`image-${active.title}-${id}`}>
+              <motion.div
+                className="flex flex-col items-center justify-between "
+                layoutId={`image-${active.title}-${id}`}
+                transition={{ duration: 0.2 }} 
+              >
                 <h4 className="text-2xl font-semibold text-neutral-400">{active.cardTitle}</h4>
-                <div className={`${active.cardsClassName ? active.cardsClassName : " gap-2"} flex justify-between items-center mt-2 `}>
-
-                  {
-                    active.cards.map((card, index) => (
-                      <Card img={card.img} key={index} className={active.cardClassName || "w-20 h-20 sm:w-32 sm:h-32"} />
-                    ))
-                  }
+                <div className={`flex justify-between items-center mt-2 ${active.cardsClassName ? active.cardsClassName : " gap-2"}`}>
+                  {active.cards.map((card, index) => (
+                    <Card img={card.img} key={index} className={active.cardClassName || "w-20 h-20 sm:w-32 sm:h-32"} />
+                  ))}
                 </div>
               </motion.div>
 
@@ -93,16 +84,13 @@ export function ExpandableCardDemo() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="h-full  flex flex-col items-center text-neutral-400 overflow-auto[mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
+                  transition={{ duration: 0.2 }}
+                  className="h-full flex flex-col items-center text-neutral-400 overflow-auto[mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
                 >
-                  {typeof active.content === "function"
-                    ? active.content()
-                    : active.content}
+                  {typeof active.content === "function" ? active.content() : active.content}
                 </motion.div>
               </div>
-
             </motion.div>
-
           </div>
         ) : null}
       </AnimatePresence>
@@ -113,10 +101,10 @@ export function ExpandableCardDemo() {
             layoutId={`coin-${coin.title}-${id}`}
             key={index}
             onClick={() => setActive(coin)}
-            className="p-4 flex flex-row justify-between items-center  hover:bg-neutral-800 rounded-xl cursor-pointer border-white border-b-2 "
+            className="p-4 flex flex-row justify-between items-center hover:bg-neutral-800 rounded-xl cursor-pointer border-white border-b-2"
           >
-            <div className="flex gap-4 flex-row ">
-              <motion.div layoutId={`image-${coin.title}-${id}`}>
+            <div className="flex gap-4 flex-row">
+              <motion.div layoutId={`image-${coin.title}-${id}`} transition={{ duration: 0.2 }}>
                 <Image
                   src={coin.src}
                   width={100}
@@ -125,16 +113,18 @@ export function ExpandableCardDemo() {
                   className="h-14 w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
-              <div className="">
+              <div>
                 <motion.h3
                   layoutId={`title-${coin.title}-${id}`}
-                  className="font-medium  text-neutral-200 text-left"
+                  className="font-medium text-neutral-200 text-left"
+                  transition={{ duration: 0.2 }}
                 >
                   {coin.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${coin.description}-${id}`}
                   className="text-neutral-400 text-left"
+                  transition={{ duration: 0.2 }}
                 >
                   {coin.description}
                 </motion.p>
@@ -143,6 +133,7 @@ export function ExpandableCardDemo() {
             <motion.button
               layoutId={`button-${coin.title}-${id}`}
               className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-[#f68700] hover:text-white text-black mt-0"
+              transition={{ duration: 0.2 }}
             >
               {coin.ctaText}
             </motion.button>
@@ -152,6 +143,7 @@ export function ExpandableCardDemo() {
     </>
   );
 }
+
 
 export const CloseIcon = () => {
   return (
