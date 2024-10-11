@@ -113,7 +113,7 @@ export const coins = [
 
         <div >
           <h4 className="text-2xl font-semibold ">Daily Riddle</h4>
-          <span className="text-2xl font-extrabold">Solution - hash</span>
+          <span className="text-2xl font-extrabold">Solution - Mediator</span>
         </div>
 
 
