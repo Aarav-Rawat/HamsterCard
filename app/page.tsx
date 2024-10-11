@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Newz from "@/components/Newz";
 import { Fredoka } from 'next/font/google';
 
 
@@ -15,6 +16,7 @@ export default function Home() {
     <main className={`${fredoka.className}  `}>
       <Navbar/>
       <Hero/>
+      <Newz/>
     </main>
   );
 }

@@ -17,7 +17,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export const metadata: Metadata = {
   title: "DailyCombos",
   description: "Today daily combo today riddle solution",
@@ -32,7 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="i-dkO4eDUXH2Sv5NU03zCqiepqL804A3f3qgR-K81cA" />
+      <meta name="google-site-verification" content="i-dkO4eDUXH2Sv5NU03zCqiepqL804A3f3qgR-K81cA" 
+      
+      />
         <link rel="icon" href="/logo.png" className="rounded-md" />
 
       </head>

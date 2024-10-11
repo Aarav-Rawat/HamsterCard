@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 
 export  const BounceLetter = ({ letter, delay,className }: { letter: string, delay: number, key:number, className:string }) => {
     return (
-      <motion.span
+      <motion.span 
+        
         style={{ display: 'inline-block', marginRight: '2px' }}
         initial={{ y: 0 }}
         animate={{ y: [0, -5, 0] }}
