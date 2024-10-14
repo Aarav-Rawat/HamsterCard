@@ -9,13 +9,13 @@ export const coins = [
     cardTitle: "Daily Combos",
     cards: [
       {
-        img: "",
+        img: "/gemz1.png",
       },
       {
-        img: "",
+        img: "/gemz2.png",
       },
       {
-        img: "",
+        img: "/gemz3.png",
       },
     ],
     content: () => {

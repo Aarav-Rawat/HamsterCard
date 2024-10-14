@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 import { coins } from "@/data";
 import Card from "./Card"
+import Link from "next/link";
 export function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof coins)[number] | boolean | null>(null);
   const ref = useRef<HTMLDivElement>(null);
@@ -37,7 +38,7 @@ export function ExpandableCardDemo() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }} 
+            transition={{ duration: 0.15 }}
             className="fixed inset-0 bg-black/20 h-full w-full z-10"
           />
         )}
@@ -52,7 +53,7 @@ export function ExpandableCardDemo() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.15 }} 
+              transition={{ duration: 0.15 }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
@@ -63,12 +64,12 @@ export function ExpandableCardDemo() {
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
               className="max-w-[420px]  min-w-[350px] sm:max-w-[700px] sm:w-auto sm:min-w-[600px] sm:min-h-[95vh] h-auto min-h-[50vh] max-h-[80vh] flex flex-col bg-neutral-900 rounded-3xl py-2 overflow-hidden"
-              transition={{ duration: 0.15 }} 
+              transition={{ duration: 0.15 }}
             >
               <motion.div
                 className="flex flex-col items-center justify-between "
                 layoutId={`image-${active.title}-${id}`}
-                transition={{ duration: 0.15 }} 
+                transition={{ duration: 0.15 }}
               >
                 <h4 className="text-2xl font-semibold text-neutral-400">{active.cardTitle}</h4>
                 <div className={`flex justify-between items-center mt-2 ${active.cardsClassName ? active.cardsClassName : " gap-2"}`}>
@@ -85,9 +86,17 @@ export function ExpandableCardDemo() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="h-full flex flex-col items-center text-neutral-400 overflow-auto[mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
+                  className="h-full flex flex-col items-center gap-20 text-neutral-400 overflow-auto[mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] mt-8"
                 >
                   {typeof active.content === "function" ? active.content() : active.content}
+
+                  <Link href={"https://dailycombos.vercel.app/"} className="p-[3px] relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                    <div className="px-8 py-2  bg-black rounded-[10px]  relative group transition duration-200 text-white hover:bg-transparent">
+                      Play the Game
+                    </div>
+                  </Link>
+
                 </motion.div>
               </div>
             </motion.div>
