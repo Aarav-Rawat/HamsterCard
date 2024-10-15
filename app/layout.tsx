@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "DailyCombos",
-  description: "Today daily combo today riddle solution",
+  description: "Today daily combo, today riddle solution, today rebus solution",
 };
 
 

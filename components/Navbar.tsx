@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className='h-10w flex justify-between border-b-[1px] border-white'>
       <div className="flex items-center justify-center h-full">
-        <Image src="/logo.png" width={50} height={50} alt="Logo" className='rounded-[50%] mr-1 mt-1 ' />
+        <Image src="/logo.png" width={45} height={45} alt="Logo" className='rounded-[50%] mt-1 ' />
 
         <h1 className='text-[#ffb83e] text-[1.35rem] sm:text-4xl  font-semibold mt-1'>
           {letters.map((letter, index) => (
@@ -19,7 +19,7 @@ const Navbar = () => {
           ))}
         </h1>
       </div>
-      <div className='sm:w-[30vw] w-[40vw]'>
+      <div className='sm:w-[75vw] w-[48vw] rounded-full'>
         <ScrollingImage />
       </div>
     </nav>
