@@ -3,9 +3,18 @@
 @tailwind utilities;
 
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --font-geist-sans: "GeistSans", sans-serif;
+  --font-geist-mono: "GeistMono", monospace;
 }
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
 
 
 .scrollContainer {

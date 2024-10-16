@@ -12,17 +12,38 @@ export const coins = [
         img: "/gemz1.png",
       },
       {
-        img: "/gemz2.png",
+        img: "/gem2.png",
       },
       {
-        img: "/gemz3.png",
+        img: "/gem3.png",
       },
     ],
     content: () => {
       return (
         <div>
           <h4 className="text-2xl font-semibold ">Daily Cipher</h4>
-          <span className="text-2xl font-extrabold">•—• • ••• • •—• •••— •</span>
+          <span className="text-2xl font-extrabold">
+            S  •   •   •
+            <br />
+            I   •   •
+            <br />
+
+            D  —   •    •
+            <br />
+
+            E  •
+            <br />
+
+            L  •   —  •    •
+            <br />
+
+            O  —  —  —
+            <br />
+
+            A  •   —
+            <br />
+
+            D  —   •    •</span>
 
         </div>
       );
@@ -174,7 +195,7 @@ export const coins = [
     // content: () => {
     //   return (
     //     <p>
-        
+
     //     </p>
     //   );
     // },
@@ -281,7 +302,7 @@ export const coins = [
       {
         img: "",
       },
-     
+
     ],
     // content: () => {
     //   return (
@@ -293,7 +314,7 @@ export const coins = [
 
   },
 
-  
+
 
 ];
 
@@ -309,7 +330,7 @@ export const newz = [
     title: "season 2 is ...",
     desc: "hmmm aha haaha",
     img: "/blumLogo.png",
-    
+
   },
   {
     name: "Hamster",
