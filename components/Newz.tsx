@@ -1,6 +1,5 @@
 import React from 'react'
 import { TextGenerateEffect } from './ui/textGenerateEffect'
-import { StickyScroll } from './ui/stickyScrollReveal'
 
 const Newz = () => {
   return (
