@@ -38,7 +38,7 @@ const Newz = () => {
                 <AccordionItem value="item-1">
                   <div className='mt-2 text-2xl'>{item.title}</div>
                   <AccordionTrigger className='flex items-center justify-center'>
-                    {<Button> Click to Read </Button>}
+                    {<Button > Click to Read </Button>}
                     
                   </AccordionTrigger>
                   <AccordionContent>
