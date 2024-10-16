@@ -27,7 +27,7 @@ const ScrollingImage: React.FC = () => {
                 animate={{ x: '-100%' }}
                 transition={{
                     ease: 'linear',
-                    duration: 30,
+                    duration: 35,
                     repeat: Infinity,
                 }}
                 style={{ whiteSpace: 'nowrap' }} 

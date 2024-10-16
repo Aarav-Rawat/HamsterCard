@@ -296,3 +296,25 @@ export const coins = [
   
 
 ];
+
+export const newz = [
+  {
+    name: "Hamster",
+    title: "season 2 is ...",
+    desc: "hmmm aha haaha",
+    img: "/blumLogo.png",
+  },
+  {
+    name: "Hamster",
+    title: "season 2 is ...",
+    desc: "hmmm aha haaha",
+    img: "/blumLogo.png",
+    
+  },
+  {
+    name: "Hamster",
+    title: "season 2 is ...",
+    desc: "hmmm aha haaha",
+    img: "/blumLogo.png",
+  },
+]
