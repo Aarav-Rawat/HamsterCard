@@ -23,27 +23,7 @@ export const coins = [
         <div>
           <h4 className="text-2xl font-semibold ">Daily Cipher</h4>
           <span className="text-2xl font-extrabold">
-            S  •   •   •
-            <br />
-            I   •   •
-            <br />
-
-            D  —   •    •
-            <br />
-
-            E  •
-            <br />
-
-            L  •   —  •    •
-            <br />
-
-            O  —  —  —
-            <br />
-
-            A  •   —
-            <br />
-
-            D  —   •    •</span>
+          </span>
 
         </div>
       );
