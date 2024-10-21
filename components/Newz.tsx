@@ -23,7 +23,7 @@ const Newz = () => {
           newz.map((item, index) => (
             <div key={index} className=' flex flex-col  justify-center mb-8'>
 
-              <div className='relative w-full max-w-[1100px]  h-[200px] sm:h-[400px] md:mx-16'>
+              <div className='relative w-full max-w-[1100px]  h-[200px] sm:h-[400px] md:mx-[80px]'>
                 <Image
                   src={item.img}
                   alt={item.name}
