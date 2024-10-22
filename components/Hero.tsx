@@ -14,7 +14,7 @@ const Hero = () => {
         <div className='flex flex-wrap items-center justify-center w-72 text-white text-center'>
           {
             coins.map((coin,index) => (
-              <h2 key={index} className=''>{coin.title},</h2>
+              <h1 key={index} className=''>{coin.title},</h1>
             ))
           }
         </div>

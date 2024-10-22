@@ -71,7 +71,7 @@ export function ExpandableCardDemo() {
                 layoutId={`image-${active.title}-${id}`}
                 transition={{ duration: 0.15 }}
               >
-                <h4 className="text-2xl font-semibold text-neutral-400">{active.cardTitle}</h4>
+                <h2 className="text-2xl font-semibold text-neutral-400">{active.cardTitle}</h2>
                 <div className={`flex justify-between items-center mt-2 ${active.cardsClassName ? active.cardsClassName : " gap-2"}`}>
                   {active.cards.map((card, index) => (
                     <Card img={card.img} key={index} className={active.cardClassName || "w-20 h-20 sm:w-32 sm:h-32"} />
@@ -123,13 +123,13 @@ export function ExpandableCardDemo() {
                 />
               </motion.div>
               <div>
-                <motion.h3
+                <motion.h2
                   layoutId={`title-${coin.title}-${id}`}
                   className="font-medium text-neutral-200 text-left"
                   transition={{ duration: 0.15 }}
                 >
                   {coin.title}
-                </motion.h3>
+                </motion.h2>
                 <motion.p
                   layoutId={`description-${coin.description}-${id}`}
                   className="text-neutral-400 text-left"

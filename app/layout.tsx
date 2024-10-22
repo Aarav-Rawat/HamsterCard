@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,10 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="i-dkO4eDUXH2Sv5NU03zCqiepqL804A3f3qgR-K81cA" 
-      
-      />
-        {/* <link rel="icon" href="/logo.png" className="rounded-md" /> */}
+        <link rel="icon" href="/logo.png" className="rounded-md" />
 
       </head>
       <body
