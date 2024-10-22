@@ -21,8 +21,13 @@ export const coins = [
     content: () => {
       return (
         <div>
-          <h4 className="text-2xl font-semibold ">Daily Cipher</h4>
+          <h4 className="text-2xl font-semibold flex items-center justify-center">Daily Cipher</h4>
           <span className="text-2xl font-extrabold">
+            <div className="flex gap-4 text-xl">
+            <div>● Tap  </div>
+            
+            <div>━  Press</div>
+            </div>
           </span>
 
         </div>
