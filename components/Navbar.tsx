@@ -15,7 +15,7 @@ const Navbar = () => {
 
         {/* <Image src="/logo.png" width={45} height={45} alt="Logo" className='rounded-[50%] mt-1 ' /> */}
 
-        <div className='text-[#ffb83e] text-2xl sm:text-4xl  font-semibold text-center'>
+        <div className='text-[#ffb83e] text-3xl sm:text-4xl  font-semibold text-center'>
           {letters.map((letter, index) => (
             <BounceLetter key={index} letter={letter} delay={index * 0.1} className={index > 4 ? "text-[#ffb83e]" : "text-white"}
             />

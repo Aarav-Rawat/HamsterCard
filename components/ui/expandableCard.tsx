@@ -104,7 +104,7 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
 
-      <ul className="max-w-2xl mx-auto flex flex-col w-full gap-5">
+      <ul className="max-w-2xl  flex flex-col w-full gap-5">
         {coins.map((coin, index) => (
           <motion.div
             layoutId={`coin-${coin.title}-${id}`}
