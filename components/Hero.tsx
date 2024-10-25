@@ -7,9 +7,9 @@ import { coins } from '@/data'
 const Hero = () => {
   return (
     <article>
-      <div className='flex items-center flex-col justify-center'>
+      <div className='flex items-center flex-col justify-center '>
 
-        <TextGenerateEffect className='text-center text-[1.6rem] sm:text-3xl font-semibold text-white' words={`Tap On Reveal`} />
+        <TextGenerateEffect className='text-center text-[1.6rem] sm:text-3xl font-semibold text-white mt-2' words={`Tap On Reveal`} />
 
         <div className='flex flex-wrap items-center justify-center w-72 text-white text-center'>
           {

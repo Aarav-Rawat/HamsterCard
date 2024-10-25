@@ -87,9 +87,9 @@ export const InfiniteMovingCards = ({
                            
                             src={item.src}
                             alt={item.title}
-                            className="h-10 sm:h-14 sm:w-14 object-cover rounded-full inline-block w-10 "
-                            width={40}
-                            height={40}
+                            className="h-[2.2rem] sm:h-[2.8rem] sm:w-[2.8rem] object-cover rounded-full inline-block w-10 "
+                            width={35}
+                            height={35}
                         />
                     </li>
                 ))}

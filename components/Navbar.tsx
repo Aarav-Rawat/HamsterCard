@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <header className='h-5w flex flex-col justify-between border-b-[1px] border-white'>
       <InfiniteMovingCards direction={"right"} speed={"slow"} />
-      <nav className="flex items-center justify-center h-full text-center mt-4 ml-1">
+      <nav className="flex items-center justify-center h-full text-center mt-1">
 
         {/* <Image src="/logo.png" width={45} height={45} alt="Logo" className='rounded-[50%] mt-1 ' /> */}
 
