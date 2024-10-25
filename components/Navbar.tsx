@@ -2,7 +2,7 @@
 // import Image from 'next/image'
 import React from 'react'
 import { BounceLetter } from './ui/bounceWord'
-import ScrollingImage from './ui/scrollingImage'
+// import ScrollingImage from './ui/scrollingImage'
 import { InfiniteMovingCards } from './ui/infiniteMovingCards'
 
 

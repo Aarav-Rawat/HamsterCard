@@ -21,7 +21,7 @@ export const InfiniteMovingCards = ({
 
     useEffect(() => {
         addAnimation();
-    }, []);
+    },);
     const [start, setStart] = useState(false);
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
@@ -82,9 +82,9 @@ export const InfiniteMovingCards = ({
                 )}
             >
                 {coins.map((item, idx) => (
-                    <li>
+                    <li  key={idx}>
                         <Image
-                            key={idx}
+                           
                             src={item.src}
                             alt={item.title}
                             className="h-10 sm:h-14 sm:w-14 object-cover rounded-full inline-block w-10 "
