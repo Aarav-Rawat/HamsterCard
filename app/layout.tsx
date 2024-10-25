@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -17,9 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "DailyCombos",
-  description: "Today daily combo, today riddle solution, today rebus solution",
+  description: "today daily combos, today riddle solution, today rebus solution",
 };
-
 
 export default function RootLayout({
   children,

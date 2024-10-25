@@ -13,7 +13,7 @@ import { Button } from './ui/movingBorder'
 
 const Newz = () => {
   return (
-    <div id="newz" className='min-h-[100vh]'>
+    <article id="newz" className='min-h-[100vh]'>
       <h3>
         <TextGenerateEffect words={"New'z"} className='text-center pb-4 pt-2 text-3xl font-semibold text-[#C36E22]' />
       </h3>
@@ -52,7 +52,7 @@ const Newz = () => {
         }
       </div>
 
-    </div>
+    </article>
   )
 }
 
