@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className='flex items-center justify-center mb-10 w-full'>
+      <div className='flex items-center justify-center mb-10 w-full mt-4'>
 
         <ExpandableCardDemo />
 
